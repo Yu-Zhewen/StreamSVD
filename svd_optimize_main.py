@@ -1,4 +1,3 @@
-from hybrid_svd_submodules import *
 import numpy as np
 import torch
 import torch.nn as nn
@@ -57,6 +56,7 @@ def svd_main(args):
         selected_schemes = args.approximate_scheme
 
     svd_optimizer.set_schemes(copy.deepcopy(selected_schemes))
+    print("schemes:", svd_optimizer.selected_schemes)
 
     skip_low_rank = True
     for scheme in selected_schemes:

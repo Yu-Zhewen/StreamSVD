@@ -22,7 +22,7 @@ parser.add_argument('--model_path', default="checkpoint/vgg11_bn_pretrained", ty
                     help='path to the pretrained model')                    
 
 
-parser.add_argument('-s', '--approximate_scheme', default=[2, 2, 2, 2, 2, 3, 3], type=int, metavar='N', nargs='+',
+parser.add_argument('-s', '--approximate_scheme', default=None, type=int, metavar='N', nargs='+',
                     help='choose the approximate scheme')                    
 parser.add_argument('-r', '--rank', default=None, type=int, metavar='N', nargs='+',
                     help='rank limitation')

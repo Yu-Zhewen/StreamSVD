@@ -304,7 +304,7 @@ class StaticLowRankScheme0(StaticLowRankDecompositionWrapper):
         vh_s_sqrt = np.transpose(vh_s_sqrt, (0, 2, 1, 3, 4))  
         vh_s_sqrt = np.reshape(vh_s_sqrt, (self.original_module.out_channels, 
                                            rank,
-                                           self.original_module.out_channels*self.original_module.kernel_size[0]*self.original_module.kernel_size[1]))    
+                                           self.original_module.kernel_size[0]*self.original_module.kernel_size[1]))    
         return u_s_sqrt, vh_s_sqrt  
 
 class StaticLowRankScheme1(StaticLowRankDecompositionWrapper):
